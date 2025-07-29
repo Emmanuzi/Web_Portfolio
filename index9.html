@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel Kibet - Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style9.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="loading-container">
+        <div class="loading-logo">E.K</div>
+        <div class="loading-text">Full Stack Developer</div>
+
+        <div class="loading-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+        </div>
+
+        <div class="loading-progress">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="loading-percentage" id="loadingPercentage">0%</div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+      <!-- Morphing Background -->
+      <div class="morphing-bg"></div>
+
+      <!-- Morphing Shapes -->
+      <div class="morphing-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="content-overlay">
+        <!-- Dark Mode Toggle -->
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch" class="magnetic">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label>
+        </div>
+
+        <!-- Navigation Dots -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#home" class="active magnetic"></a></li>
+            <li><a href="#about" class="magnetic"></a></li>
+            <li><a href="#skills" class="magnetic"></a></li>
+            <li><a href="#education" class="magnetic"></a></li>
+            <li><a href="#interests" class="magnetic"></a></li>
+            <li><a href="#projects" class="magnetic"></a></li>
+            <li><a href="#contact" class="magnetic"></a></li>
+          </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section-morph active">
+          <div class="container">
+            <div class="hero-content">
+              <h1>Emmanuel K.</h1>
+              <div class="typewriter">
+                Full Stack Developer & UI/UX Designer
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <p class="stagger-item">
+                  Hello! I'm Emmanuel, a passionate full-stack developer with
+                  over 5 years of experience creating digital solutions that
+                  make a difference. I specialize in modern web technologies and
+                  love turning complex problems into simple, beautiful designs.
+                </p>
+                <p class="stagger-item">
+                  My journey in tech started with curiosity and has evolved into
+                  a career driven by innovation and continuous learning. I
+                  believe in writing clean, efficient code and creating user
+                  experiences that truly matter.
+                </p>
+                <p class="stagger-item">
+                  When I'm not coding, you'll find me exploring new
+                  technologies, contributing to open-source projects, or sharing
+                  knowledge with the developer community.
+                </p>
+              </div>
+              <div class="about-image">
+                <div class="profile-img magnetic">
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">Programming Languages & Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-tag stagger-item magnetic">JavaScript</div>
+              <div class="skill-tag stagger-item magnetic">TypeScript</div>
+              <div class="skill-tag stagger-item magnetic">Python</div>
+              <div class="skill-tag stagger-item magnetic">Java</div>
+              <div class="skill-tag stagger-item magnetic">React</div>
+              <div class="skill-tag stagger-item magnetic">Node.js</div>
+              <div class="skill-tag stagger-item magnetic">Vue.js</div>
+              <div class="skill-tag stagger-item magnetic">Angular</div>
+              <div class="skill-tag stagger-item magnetic">Express.js</div>
+              <div class="skill-tag stagger-item magnetic">MongoDB</div>
+              <div class="skill-tag stagger-item magnetic">PostgreSQL</div>
+              <div class="skill-tag stagger-item magnetic">MySQL</div>
+              <div class="skill-tag stagger-item magnetic">Docker</div>
+              <div class="skill-tag stagger-item magnetic">AWS</div>
+              <div class="skill-tag stagger-item magnetic">Git</div>
+              <div class="skill-tag stagger-item magnetic">GraphQL</div>
+            </div>
+
+            <!-- Skills Visualization -->
+            <div class="skills-visualization">
+              <div class="skill-category stagger-item">
+                <h3>Frontend Development</h3>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>React/Next.js</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>JavaScript/TypeScript</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>CSS/Sass</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category stagger-item">
+                <h3>Backend Development</h3>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>Node.js/Express</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>Python/Django</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 82%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>Database Design</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category stagger-item">
+                <h3>DevOps & Tools</h3>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>Docker/Kubernetes</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>AWS/Cloud Services</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 78%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">
+                    <span>CI/CD Pipelines</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">Educational Background</h2>
+            <div class="education-grid">
+              <div class="education-card glass-card stagger-item magnetic">
+                <div class="education-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Bachelor of Computer Science</h3>
+                <p>University of Technology</p>
+                <p>2018 - 2022</p>
+                <p>
+                  Graduated Magna Cum Laude with specialization in Software
+                  Engineering and Web Development.
+                </p>
+              </div>
+              <div class="education-card glass-card stagger-item magnetic">
+                <div class="education-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Full Stack Web Development</h3>
+                <p>Tech Bootcamp Institute</p>
+                <p>2022</p>
+                <p>
+                  Intensive 6-month program covering modern web technologies and
+                  best practices.
+                </p>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem">
+              <a
+                href="/assests/cv.pdf"
+                class="download-cv stagger-item magnetic"
+              >
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">Interests & Passions</h2>
+            <div class="interests-list">
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-robot"></i>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile Development</span>
+              </div>
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-cloud"></i>
+                <span>Cloud Computing</span>
+              </div>
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-shield-alt"></i>
+                <span>Cybersecurity</span>
+              </div>
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-gamepad"></i>
+                <span>Game Development</span>
+              </div>
+              <div class="interest-item glass-card stagger-item magnetic">
+                <i class="fas fa-code-branch"></i>
+                <span>Open Source</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+              <div class="project-card glass-card stagger-item magnetic">
+                <div class="project-preview">
+                  <div class="preview-content">
+                    <div class="preview-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4>View Project Details</h4>
+                    <p>Hover to explore features</p>
+                  </div>
+                </div>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                  A full-featured e-commerce platform built with React and
+                  Node.js, featuring real-time inventory management, secure
+                  payment processing, and admin dashboard.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link magnetic">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                  <a href="#" class="project-link magnetic">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card glass-card stagger-item magnetic">
+                <div class="project-preview">
+                  <div class="preview-content">
+                    <div class="preview-icon">
+                      <i class="fas fa-tasks"></i>
+                    </div>
+                    <h4>View Project Details</h4>
+                    <p>Hover to explore features</p>
+                  </div>
+                </div>
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">
+                  A collaborative task management application with real-time
+                  updates, drag-and-drop functionality, and team collaboration
+                  features.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link magnetic">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                  <a href="#" class="project-link magnetic">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card glass-card stagger-item magnetic">
+                <div class="project-preview">
+                  <div class="preview-content">
+                    <div class="preview-icon">
+                      <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h4>View Project Details</h4>
+                    <p>Hover to explore features</p>
+                  </div>
+                </div>
+                <h3 class="project-title">Weather Dashboard</h3>
+                <p class="project-description">
+                  A responsive weather dashboard with location-based forecasts,
+                  interactive maps, and historical weather data visualization.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Chart.js</span>
+                  <span class="tech-tag">API Integration</span>
+                  <span class="tech-tag">CSS Grid</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link magnetic">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                  <a href="#" class="project-link magnetic">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-morph">
+          <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+              <div class="form-group stagger-item">
+                <input
+                  type="text"
+                  class="form-input magnetic"
+                  placeholder=" "
+                  required
+                />
+                <label class="form-label">Your Name</label>
+              </div>
+              <div class="form-group stagger-item">
+                <input
+                  type="email"
+                  class="form-input magnetic"
+                  placeholder=" "
+                  required
+                />
+                <label class="form-label">Email Address</label>
+              </div>
+              <div class="form-group stagger-item">
+                <input
+                  type="text"
+                  class="form-input magnetic"
+                  placeholder=" "
+                />
+                <label class="form-label">Subject</label>
+              </div>
+              <div class="form-group stagger-item">
+                <textarea
+                  class="form-textarea magnetic"
+                  placeholder=" "
+                  required
+                ></textarea>
+                <label class="form-label">Your Message</label>
+              </div>
+              <button type="submit" class="submit-btn stagger-item magnetic">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="social-links">
+              <a href="#" class="social-link stagger-item magnetic">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link stagger-item magnetic">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link stagger-item magnetic">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link stagger-item magnetic">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <p>&copy; 2024 Emmanuel Kibet. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script9.js"></script>
+  </body>
+</html>
