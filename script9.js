@@ -1,4 +1,4 @@
-// ===== ENHANCED LOADING SCREEN FUNCTIONALITY =====
+// Enhanced Loading Screen Functionality.
 class LoadingScreen {
   constructor() {
     this.loadingScreen = document.getElementById("loadingScreen");
@@ -75,7 +75,7 @@ class LoadingScreen {
   }
 }
 
-// ===== MAGNETIC CURSOR SYSTEM =====
+// Magnetic cursor system.
 class MagneticCursor {
   constructor() {
     this.cursor = document.querySelector(".custom-cursor");
@@ -90,7 +90,7 @@ class MagneticCursor {
   }
 
   init() {
-    if (window.innerWidth <= 768) return; // Disable on mobile
+    if (window.innerWidth <= 768) return; // Disable on mobile devices
 
     this.bindEvents();
     this.animateCursor();
@@ -154,7 +154,7 @@ class MagneticCursor {
   }
 }
 
-// ===== ENHANCED MORPHING TRANSITION SYSTEM =====
+// Enhanced Morphing Transition System
 class MorphingTransitions {
   constructor() {
     this.currentSection = 0;
@@ -466,7 +466,7 @@ class MorphingTransitions {
   }
 }
 
-// ===== ENHANCED FORM VALIDATION =====
+// Enhanced Form Validation.
 class FormValidator {
   constructor() {
     this.form = document.querySelector(".contact-form");
@@ -610,7 +610,7 @@ class FormValidator {
   }
 }
 
-// ===== PERFORMANCE OPTIMIZATION =====
+// Performance Optimization..
 class PerformanceOptimizer {
   constructor() {
     this.init();
@@ -671,7 +671,7 @@ class PerformanceOptimizer {
   }
 }
 
-// ===== DARK MODE TOGGLE FUNCTIONALITY =====
+// Dark Mode Toggle Functionality...
 const themeToggle = document.getElementById("theme-switch");
 const body = document.body;
 
@@ -694,7 +694,7 @@ themeToggle.addEventListener("change", function () {
   }, 300);
 });
 
-// ===== SKILL TAGS INTERACTION =====
+// Skills tags Interaction...
 const skillTags = document.querySelectorAll(".skill-tag");
 
 skillTags.forEach((tag) => {
@@ -706,7 +706,7 @@ skillTags.forEach((tag) => {
   });
 });
 
-// ===== INITIALIZE ALL SYSTEMS =====
+// Initialize all systems..
 document.addEventListener("DOMContentLoaded", () => {
   new LoadingScreen();
 
@@ -736,14 +736,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (footer) observer.observe(footer);
 });
 
-// ===== PREVENT SCROLL DURING LOADING =====
+// Prevent Scroll during loading
 document.body.style.overflow = "hidden";
 
 setTimeout(() => {
   document.body.style.overflow = "auto";
 }, 3500);
 
-// ===== KEYBOARD NAVIGATION =====
+// Keyboard Navigation...
 document.addEventListener("keydown", (e) => {
   const currentSection = document.querySelector(".section-morph.active");
   const sections = Array.from(document.querySelectorAll(".section-morph"));
@@ -764,7 +764,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// ===== LOADING ANIMATION =====
+// Loading Animation...
 window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 
