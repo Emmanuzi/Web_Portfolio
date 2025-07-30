@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Preview index9.html on localhost",
+      "command": "pwsh.exe",
+      "args": ["-Command", "Start-Process http://localhost:5500/index9.html"],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
